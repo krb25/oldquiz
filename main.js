@@ -26,6 +26,11 @@ function getList() {
               }
           });
       }
+      error: function(xhr, error){
+        console.log("error");
+        console.log(xhr);
+        console.log(error)
+      }
   });
   return list;
 }
