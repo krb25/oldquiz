@@ -25,7 +25,7 @@ function getList() {
                 list.push({url: val, name: name});
               }
           });
-      }
+      },
       error: function(xhr, error){
         console.log("error");
         console.log(xhr);
