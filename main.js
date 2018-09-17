@@ -15,6 +15,7 @@ function getList() {
       url : '/fotos',
       async: false,
       success: function (data) {
+        console.log(data)
           $(data).find("a").attr("href", function (i, val) {
               if( val.match(/\.(jpe?g|PNG|gif)$/) ) {
                 var name = val.split("/");
@@ -22,8 +23,6 @@ function getList() {
                 var name = name[0].split("_")
                 var name = name.join(' ')
                 list.push({url: val, name: name});
-                //$("#kop").prepend("<img src='"+ val +"'>");
-
               }
           });
       }
