@@ -71,7 +71,11 @@ function getRandomItem(list) {
 }
 
 function postImage(item) {
-  $("#kop").prepend("<img src='"+ item.url +"'>");
+  $("#kop").prepend("<img id='resize' src='"+ item.url +"'>");
+  // $('#resize').css({
+  //   'height': '10px',
+  //   'width': '5px'
+  // });
 
   $('#kop').each(function() {
     if ($(this).find('img').length) {

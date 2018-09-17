@@ -53,6 +53,7 @@ margin:auto;
   width:20%;
   display:block;
   margin: 0 auto;
+  min-width: 200px;
 }
 .btn:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
