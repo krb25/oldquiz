@@ -4,6 +4,7 @@ var bad = 0;
 $(document).ready(function() {
 
   var originalList = getList();
+  console.log(originalList);
   var target = getRandomItem(originalList)
   buildQuiz(target, originalList);
 });
