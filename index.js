@@ -19,7 +19,7 @@ function getList() {
   {url: "/fotos/Elian_Engers.png", name: "Elian Engers"},
   {url: "/fotos/Eline_Teeuwen.PNG", name: "Eline Teeuwen"},
   {url: "/fotos/Eva_Boeijinga.png", name: "Eva Boeijinga"},
-  {url: "/fotos/Fabio_Holtappels.png", name: "Fabio_Holtappels"},
+  {url: "/fotos/Fabio_Holtappels.png", name: "Fabio Holtappels"},
   {url: "/fotos/Gijs_Eijgelaar.png", name: "Gijs Eijgelaar"},
   {url: "/fotos/Hedwig_Goudsmit.png", name: "Hedwig Goutsmit"},
   {url: "/fotos/Ianthe_Sosef.PNG", name: "Ianthe Sosef"},
