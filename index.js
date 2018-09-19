@@ -4,9 +4,7 @@ var bad = 0;
 $(document).ready(function() {
 
   var originalList = getList();
-  console.log(originalList);
-  var target = getRandomItem(originalList)
-  buildQuiz(target, originalList);
+  buildQuiz(originalList);
 });
 
 function getList() {
@@ -91,14 +89,17 @@ function removeItem(list, item) {
   };
 }
 
-function buildQuiz(target, originalList) {
+function buildQuiz(originalList) {
   document.getElementById("goodscore").innerHTML = "Goed :" + good;
   document.getElementById("badscore").innerHTML = "Fout :" + bad;
 
+  var target = getRandomItem(originalList);
   postImage(target);
-  removeItem(originalList, target);
   buttonList = originalList.slice();
+  removeItem(buttonList, target);
   console.log(target.name)
+  console.log(originalList);
+  console.log(buttonList);
 
   $($('.btn')[Math.floor(Math.random()*$('.btn').length)]).html(target.name);
 
@@ -118,9 +119,11 @@ function buildQuiz(target, originalList) {
         'font-size': '80px',
         'text-align': 'center'
       }).fadeIn("800").fadeOut("400", function() {
-        var newTarget = getRandomItem(originalList)
         $('.btn').off('click');
-        buildQuiz(newTarget, originalList);
+        $('.btn').each(function(i, obj) {
+          obj.innerHTML = '';
+        });
+        buildQuiz(originalList);
 
       });
     }
@@ -131,10 +134,11 @@ function buildQuiz(target, originalList) {
         'font-size': '80px',
         'text-align': 'center'
       }).fadeIn("800").fadeOut("400", function() {
-        var newTarget = getRandomItem(originalList)
         $('.btn').off('click');
-        buildQuiz(newTarget, originalList);
-
+        $('.btn').each(function(i, obj) {
+          obj.innerHTML = '';
+        });
+        buildQuiz(originalList);
       });
     }
 
