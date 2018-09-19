@@ -29,7 +29,7 @@ function getList() {
   {url: "/fotos/Isa_Last.PNG", name: "Isa Last"},
   {url: "/fotos/Jarno_Wiggerts.PNG", name: "Jarno Wiggerts"},
   {url: "/fotos/Jessey_Vrossink.PNG", name: "Jessey Vrossink"},
-  {url: "/fotos/Jessica_Eggen.png", name: "Jessica_Eggen"},
+  {url: "/fotos/Jessica_Eggen.png", name: "Jessica Eggen"},
   {url: "/fotos/Jikke_Piqeur.PNG", name: "Jikke Piqeur"},
   {url: "/fotos/Job_Voskuilen.PNG", name: "Job Voskuilen"},
   {url: "/fotos/Joep_Fellinger.png", name: "Joep Fellinger"},
